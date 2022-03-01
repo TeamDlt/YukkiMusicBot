@@ -243,9 +243,7 @@ async def initiate_bot():
 
 home_text_pm = f"""Hello ,
 My name is {BOT_NAME}.
-A Telegram Music+Video Streaming bot with some useful features.
-
-All commands can be used with: / """
+okay [dev](t.me/heroxxd)"""
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -394,9 +392,7 @@ async def help_parser(name, keyboard=None):
     return (
         """Hello {first_name},
 
-Click on the buttons for more information.
-
-All commands can be used with: /
+okkkkkkkkkkkk
 """.format(
             first_name=name
         ),
@@ -428,10 +424,7 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""Hello {query.from_user.first_name},
-
-Click on the buttons for more information.
-
-All commands can be used with: /
+ok 
  """
     if mod_match:
         module = mod_match.group(1)
